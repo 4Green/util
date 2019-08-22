@@ -5,7 +5,7 @@ const util = {
    * @returns {boolean}
    */
   isObject(obj){
-    return obj !== null && typeof obj === "object";
+    return obj !== null && obj.constructor === Object;
   },
   /**
    * 함수 인가?
